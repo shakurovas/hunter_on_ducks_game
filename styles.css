@@ -1,0 +1,120 @@
+@keyframes duck-fly-1 {
+  0% {
+    left: -55px;
+    top: 44vh; }
+  50% {
+    left: 50%;
+    top: 42vh; }
+  100% {
+    left: 105%;
+    top: 49vh; } }
+@keyframes duck-fly-2 {
+  0% {
+    left: -55px;
+    top: 62vh; }
+  50% {
+    left: 50%;
+    top: 9vh; }
+  100% {
+    left: 105%;
+    top: 7vh; } }
+@keyframes duck-fly-3 {
+  0% {
+    left: -55px;
+    top: 15vh; }
+  50% {
+    left: 50%;
+    top: 54vh; }
+  100% {
+    left: 105%;
+    top: 33vh; } }
+@keyframes duck-fly-4 {
+  0% {
+    left: -55px;
+    top: 45vh; }
+  50% {
+    left: 50%;
+    top: 49vh; }
+  100% {
+    left: 105%;
+    top: 8vh; } }
+@keyframes duck-fly-5 {
+  0% {
+    left: -55px;
+    top: 42vh; }
+  50% {
+    left: 50%;
+    top: 26vh; }
+  100% {
+    left: 105%;
+    top: 47vh; } }
+@keyframes duck-fly-6 {
+  0% {
+    left: -55px;
+    top: 31vh; }
+  50% {
+    left: 50%;
+    top: 48vh; }
+  100% {
+    left: 105%;
+    top: 71vh; } }
+body {
+  background-image: url(https://i.ytimg.com/vi/i9R8MqilMW8/maxresdefault.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  counter-reset: count;
+  position: relative; }
+
+h1 {
+  position: absolute;
+  bottom: -16px;
+  left: 32px; }
+
+input[type="checkbox"] {
+  position: absolute;
+  visibility: hidden;
+  left: -999999px; }
+
+.duck-1 {
+  position: absolute;
+  animation: duck-fly 5s linear 0s 1 both; }
+
+.duck-1 {
+  position: absolute;
+  animation: duck-fly-1 5s linear 1s 1 both; }
+
+.duck-2 {
+  position: absolute;
+  animation: duck-fly-2 5s linear 2s 1 both; }
+
+.duck-3 {
+  position: absolute;
+  animation: duck-fly-3 5s linear 3s 1 both; }
+
+.duck-4 {
+  position: absolute;
+  animation: duck-fly-4 5s linear 4s 1 both; }
+
+.duck-5 {
+  position: absolute;
+  animation: duck-fly-5 5s linear 5s 1 both; }
+
+.duck-6 {
+  position: absolute;
+  animation: duck-fly-6 5s linear 6s 1 both; }
+
+img {
+  width: 50px; }
+
+input[type="checkbox"]:checked {
+  counter-increment: count; }
+
+input[type="checkbox"]:checked + img {
+  visibility: hidden;
+  display: none; }
+
+h1::after {
+  content: " " counter(count); }
+
+/*# sourceMappingURL=styles.css.map */
